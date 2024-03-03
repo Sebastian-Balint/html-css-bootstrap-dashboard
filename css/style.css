@@ -1,0 +1,332 @@
+/* GENERAL SETTING */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* CONTAINER APP */
+
+.container_app{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.c_padding{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+main{
+    background-color: #212529 ;
+    display: flex;
+    overflow: hidden;
+}
+
+
+/* HEADER SETTING */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.logo{
+    height: 35px;
+}
+
+.mobile_logo{
+    display: none;
+}
+
+.bell{
+    font-size: 20px;
+    color: rgb(255, 187, 0);
+}
+
+
+/* SEARCH BAR */
+
+form{
+    position: relative;
+}
+
+form > i{
+    position: absolute;
+    top: 25%;
+    left: 5px;
+}
+
+input{
+    width: 100%;
+}
+
+.p_left{
+   padding-left:30px;   
+}
+
+.mr_10{
+    margin-right: 12px;
+}
+
+
+/* SIDEBAR LEFT SETTING */
+
+.sidebar{
+    width: 160px;
+    display: flex;
+    height: calc(100vh - 71px);
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 71px;
+    position: relative;
+}
+
+.top_sidebar{
+    width: 160px;
+    position: fixed;
+    top: 71px;
+    left: 0;
+}
+
+.bot_sidebar{
+    width: 160px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.top_sidebar a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.top_sidebar ul{
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.top_sidebar i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.bot_sidebar a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-left: 2rem;
+}
+
+.bot_sidebar i{
+    margin-right: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* TOPBAR MAIN SETTING */
+
+.topbar{
+    height: 130px;
+    width: calc(100vw - 160px);
+    background-color: #0d6efd;
+    margin-top: 71px;
+}
+
+.h_130{
+    height: 130px;
+}
+
+.list-group-item h4{
+    margin-bottom: 0;
+}
+
+.mr_10{
+    margin-right: 10px;
+}
+
+.cb_blaz{
+    background-color: #1352b1;
+}
+
+
+/* CONTENT SETTING */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 160px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.b_radius_top{
+    border-top-left-radius: 0.25rem ;
+    border-top-right-radius: 0.25rem ;
+}
+
+.color_black{
+    color: black;
+}
+
+.stats{
+    width: 100%;
+}
+
+#bb_none, #bb_none1, #bb_none2, #bb_none3, #bb_none4 {
+    border-bottom-color: inherit;
+}
+
+tr td:first-child i{
+    background-color: orangered;
+    padding: 3px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius: 100%;
+    border: 1px solid orangered;
+    margin-right: 5px;
+}
+
+.icon_border{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(163, 163, 163);
+    margin-right: 5px;
+}
+
+
+/* TOGGLE RIGHT-BAR */
+
+.tr_nuovos{
+    text-align: center;
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+        width: 60px;
+    }
+
+    .bot_sidebar{
+        width: 60px;
+    }
+    
+    .logo{
+        display: none;
+    }
+
+    .mobile_logo{
+        display: block;
+        height: 40px;
+    }
+
+    .topbar{
+        width: 100vw;
+    }
+
+    .content{
+        width: calc(100% - 60px);
+    }
+
+    .d_none{
+        display: none;
+    }
+
+    .top_sidebar{
+        width: 60px;
+    }
+
+    .top_sidebar a span, .bot_sidebar a span{
+        display: none;
+    }
+
+    .top_sidebar a i, .bot_sidebar a i{
+        align-items: center;
+    }
+
+    .top_sidebar ul, .top_sidebar ul{
+        padding-left: 1.1rem;
+    }
+
+    .bot_sidebar a{
+        margin-left: 1.1rem
+    }
+
+    header{
+        width: 100%;
+    }
+    
+    header div{
+        width: 100%;
+    }
+
+    .topbar{
+        height: 220px;
+    }
+
+    .dn_badge{
+        display: none;
+    }
+
+    #order2 { order: 2; }
+    #order3 { order: 3; }
+    #order1 { order: 1; }
+
+    .mt_1rem{
+        margin-top: 1rem;
+    }
+
+    .tr_nuovos{
+        text-align: left;
+    }
+        
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 550px) {
+    .sidebar{
+        width: 60px;
+    }
+
+    .bot_sidebar{
+        width: 60px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .mobile_logo{
+        display: block;
+        height: 40px;
+    }
+
+    .topbar{
+        width: 100vw;
+    }
+
+    .top_sidebar{
+        width: 60px;
+    }
+}
+
+
+/* DESKTOP LARGE */
+
+@media screen and (max-width: 1550px) {
+    .d_none{
+        display: none;
+    }
+}
